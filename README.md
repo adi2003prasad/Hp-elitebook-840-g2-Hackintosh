@@ -31,7 +31,9 @@ Things that Work:
 ### Gathering files
 #### First Download the main opencore sample file
 [OpenCore sample file or base file](https://github.com/acidanthera/OpenCorePkg/releases)
+
 First Go through the getting started file of the dortania guide 
+
 Still You want to go with my file 
 [My File]()
 #### Kexts Required:
@@ -48,5 +50,37 @@ Still You want to go with my file
 1. HfsPlus - [HfsPlus]([https://github.com/acidanthera/HfsPlus](https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)https://github.com/acidanthera/OcBinaryData/blob/master/Drivers/HfsPlus.efi)
 2. OpenRuntime - [OpenRuntime](https://github.com/acidanthera/OpenCorePkg/releases)
 3. OpenCanopy - For the beautiful opencore gui - [OpenCanopy](https://github.com/acidanthera/OpenCorePkg/releases)
-4. ResetNvramEntry 
+4. ResetNvramEntry
+#### SSDT
+1. 
+### Setting up the BIOS
+GOT FROM AN ALREADY UP REPOSITORY [CHECK IT OUT](https://github.com/AktasC/Hackintosh-Elitebook-Broadwell/blob/master/one.md)
 
+- [Enter BIOS menu](#ø---enter-bios-menu)
+- **Advanced tab**
+- Boot Options
+  - Startup Menu Delay (Sec.) : **05**
+  - [ ] Fast Boot
+  - [x] USB Device boot
+  - [x] PCIe/M.2 SSD boot
+  - Boot Mode : UEFI Hybrid (With CSM)
+- Device Configurations
+  - [x] USB legacy support
+  - [x] USB 3.0 (HXCI)
+  - Video Memory Size : **64MB**
+  - [ ] Wake on USB
+  - [ ] Virtualization (VTx / VTd)
+  - [ ] Trusted Execution Technology (TXT)
+  - [ ] Hybrid Graphics
+  - [x] Deep sleep
+- Built-in Device Options
+  - Wake on LAN : **Disable**
+  - [x] Wake unit from sleep when lid is opened
+  - [x] Power on unit when lid is opened
+  - [x] PCIe/M.2 SSD
+- Port Options
+  - [x] USB port
+  - [ ] Smart Card
+- **Main Tab**
+- Save Changes and Exit
+- Poweroff your laptop.
